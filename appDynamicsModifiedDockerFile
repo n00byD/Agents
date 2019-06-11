@@ -1,4 +1,4 @@
-FROM artifactory.bancolombia.corp/devops/java8-rhel
+FROM tdcnnxdr10.ocpnd.canada.root.corp:10433/nihb/openjdk:alpine.3
 VOLUME /tmp
 ADD *.jar application.jar
 RUN mkdir -p /opt
