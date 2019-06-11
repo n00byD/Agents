@@ -1,0 +1,2 @@
+##create config map
+oc create cm appdynamics-info --from-literal=CONTROLLER_HOST=tdcnaddr40.ocpnd.canada.root.corp --from-literal=CONTROLLER_PORT=8090 --from-literal=CONTROLLER_SSL_ENABLED=false --from-literal=ACCOUNT_NAME=customer1 --from-literal=APPLICATION_NAME=NIHB-Dev --from-literal=TIER_NAME=NIHB
