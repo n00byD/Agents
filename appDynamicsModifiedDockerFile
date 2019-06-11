@@ -1,0 +1,7 @@
+FROM artifactory.bancolombia.corp/devops/java8-rhel
+VOLUME /tmp
+ADD *.jar application.jar
+RUN mkdir -p /opt
+ADD application.jar /opt/appliction.jar
+COPY appd-agent/ /opt/appd-agent
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS $APPD_OPTS -Djava.security.egd=file:/dev/./urandom -jar /application.jar]
