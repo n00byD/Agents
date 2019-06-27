@@ -13,15 +13,15 @@ spec:
       containers:
       - env:
         - name: APPDYNAMICS_CONTROLLER_HOST_NAME
-          value: "Host Name goes here"
+          value: "tdcnaddr40.ocpnd.canada.root.corp"
         - name: APPDYNAMICS_CONTROLLER_PORT
-          value: "443"
+          value: "8090"
         - name: APPDYNAMICS_CONTROLLER_SSL_ENABLED
-          value: "true"
+          value: "false"
         - name: APPDYNAMICS_AGENT_ACCOUNT_NAME
-          value: "Account Name goes here"
+          value: "customer1"
         - name: APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY
-          value: "Access Key goes here"
+          value: "<ADD KEY HERE>"
         - name: APPDYNAMICS_SIM_ENABLED
           value: "true"
         - name: APPDYNAMICS_DOCKER_ENABLED
