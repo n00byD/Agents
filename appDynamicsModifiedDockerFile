@@ -1,4 +1,4 @@
-FROM tdcnnxdr10.ocpnd.canada.root.corp:10433/nihb/openjdk:alpine.3
+FROM *******.*****.canada.root.corp:10433/app/openjdk:alpine.3
 VOLUME /tmp
 ADD *.jar application.jar
 RUN mkdir -p /opt
